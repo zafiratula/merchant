@@ -8,9 +8,6 @@
 
     <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
 </head>
 
 <body>
@@ -56,7 +53,31 @@
             </ul>
         </div>
 
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div>
+                    <div class="user">
+                        <img src="user.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
 
 </body>
 
